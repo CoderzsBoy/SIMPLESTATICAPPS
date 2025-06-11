@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* Set a clean background and font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h1 {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #007BFF;
+    margin: 20px 0;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Adds spacing between cells */
+    width: 60vh;  /* Smaller and more balanced size */
+    height: 60vh;
+    margin: auto; /* Centers the board */
+    /* background-color: #333; Optional: Background for contrast */
+}
+
+.boxes {
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; /* Adjust text size */
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: #eed726; /* Clean white boxes */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.boxes:hover {
+    background-color: #eed7266f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

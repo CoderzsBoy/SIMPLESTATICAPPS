@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YTL-Youtube Video Downloader</h1>
+        <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=VIDEO_ID">
+        <select id="qualitySelect" hidden>
+            <option value="">Select Quality</option>
+        </select>        
+        <button onclick="getDownloadLinks()">Download This Video</button>
+    <img hidden>
+    <h2  hidden></h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

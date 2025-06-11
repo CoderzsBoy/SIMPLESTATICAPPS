@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Techy', 'Impact', sans-serif;
+}
+
+@font-face {
+    font-family: 'Techy';
+    src: url('fonts/Technology-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* Calculator Container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Display Screen */
+input {
+    text-align: right;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+/* Button Container */
+.btnholder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+/* Common Button Styles */
+button {
+    width: 70px;
+    height: 70px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Effects */
+button:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+button:active {
+    background: #555;
+}
+
+/* Special Function Buttons (AC, ±, %) */
+button.function {
+    background: #a5a5a5;
+    color: black;
+}
+
+button.function:hover {
+    background: #c4c4c4;
+}
+
+/* Operator Buttons (+, -, ×, ÷) */
+button.operator {
+    background: #ff9500;
+}
+
+button.operator:hover {
+    background: #ffad33;
+}
+
+button.operator:active {
+    background: #cc7700;
+}
+
+/* Equal Button */
+button.equal {
+    background: #007aff;
+}
+
+button.equal:hover {
+    background: #339aff;
+}
+
+button.equal:active {
+    background: #005ecb;
+}
+
+/* Zero Button (iPhone Style - Wider) */
+button.zero {
+    width: 150px;
+    border-radius: 50px;
+    grid-column: span 2;
+}

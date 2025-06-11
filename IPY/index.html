@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPY</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <h1>Welcome To IPY - Loc Tracker</h1>
+    <label for="ip">Enter Your Ip:</label>
+<input type="text" id="ip" name="ip" required/>
+<button onclick="getLoc()">Get Location</button>
+<!-- #City
+    #Country
+    #Hostname
+    #Timezone -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Info</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
