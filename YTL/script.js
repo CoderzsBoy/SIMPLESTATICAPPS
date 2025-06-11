@@ -3,7 +3,7 @@ async function fetchYouTubeVideoData(videoId) {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '7537dfeec0msh0cc9f1782213e19p129432jsn19cbff316221', // Replace with your actual API key
+            'x-rapidapi-key': 'c27441b4d8mshbdaab3e75a2464ap11fef0jsn7e2103f45bd2', // Replace with your actual API key
             'x-rapidapi-host': 'ytstream-download-youtube-videos.p.rapidapi.com'
         }
     };
